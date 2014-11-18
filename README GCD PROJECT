@@ -1,0 +1,195 @@
+Analysis of the Human Activity Recognition Using Smartphones Dataset
+
+The enclosed abbreviated data set is an analysis of the “Human Activity Recognition Using Smartphones Dataset” with focus on the 3-axial accelerometer (linear motion, acceleration) and the 3-axial gyro (rotational motion) measurements of the various subject activities (walking,  walking upstairs,  walking downstairs, sitting, standing, and laying).  Out of the 561 features  described in the original data set (see Appendix 2 for the full dataset description), 79 were selected that measured means and standard deviation of various features for the six activities and the translational and rotational motions associated with the activities of the 30 subjects that participated in the experiment.
+The original data set consisted of training and test data suites that were combined into a single data set.
+This aggregated data set was downsized to include only 79 of the 561 features and the long descriptive names were further abbreviated for cleaner presentation while maintaining enough description to minimize table lookup.  See the full names of the 79 features (variables) and their abbreviated names in Appendix One.
+
+For each of the 79 variables, measurements were grouped by subject and activity so that the mean of each variable for each subject for each activity could be summarized in a ‘tidy’ data set as shown below.
+Subject	Activity	            Each Variable (mean), 79 each  . . .
+1       WALKING               xxxxxx 
+        WALKING_UPSTAIRS      yyyyyy
+        WALKING_DOWNSTAIRS    zzzzzzzz
+        SITTING               wwwww
+        STANDING              vvvvvvv 
+        LAYING	              uuuuuuu
+
+The extracted data set is provided in the text file called tidy_data_set.txt 
+
+The extracted data set includes:
+- the subject identifier and the activity. 
+- Triaxial acceleration (the estimated body acceleration).
+- Triaxial Angular velocity from the gyroscope. 
+- A 79-feature vector that contains the mean of the means and standard deviations of these features. 
+  (Each of the 79 variables from 10299 records has been averaged by subject, activity, and feature (variable).)
+
+
+
+
+Appendix One - Variables Description
+
+Long	Variable Names              Abbreviated Variable Names
+tBodyAcc-mean()-X             tBAc_mean_X        
+tBodyAcc-mean()-Y             tBAc_mean_Y
+tBodyAcc-mean()-Z             tBAc_mean_Z
+tBodyAcc-std()-X              tBAc_std_X
+tBodyAcc-std()-Y              tBAc_std_Y 
+tBodyAcc-std()-Z              tBAc_std_Z  
+tGravityAcc-mean()-X          tGAc_mean_X       
+tGravityAcc-mean()-Y          tGAc_mean_Y       
+tGravityAcc-mean()-Z          tGAc_mean_Z
+tGravityAcc-std()-X           tGAc_std_X
+tGravityAcc-std()-Y           tGAc_std_Y 
+tGravityAcc-std()-Z           tGAc_std_Z
+tBodyAccJerk-mean()-X         tBAcJ_mean_X
+tBodyAccJerk-mean()-Y         tBAcJ_mean_Y
+tBodyAccJerk-std()-X           tBAcJ_std_X
+tBodyAccJerk-std()-Y          tBAcJ_std_Y 
+tBodyAccJerk-std()-Z          tBAcJ_std_Z
+tBodyGyro-mean()-X            tBGy_mean_X 
+tBodyGyro-mean()-Y            tBGy_mean_Y 
+tBodyGyro-mean()-Z            tBGy_mean_Z 
+tBodyGyro-std()-X             tBGy_std_X 
+tBodyGyro-std()-Y             tBGy_std_Y 
+tBodyGyro-std()-Z             tBGy_std_Z 
+tBodyGyroJerk-mean()-X        tBGyJerk_mean_X
+tBodyGyroJerk-mean()-Y        tBGyJerk_mean_Y 
+tBodyGyroJerk-mean()-Z        tBGyJerk_mean_Z 
+tBodyGyroJerk-std()-X          tBGyJerk_std_X
+tBodyGyroJerk-std()-Y          tBGyJerk_std_Y
+tBodyGyroJerk-std()-Z          tBGyJerk_std_Z
+tBodyAccMag-mean()             tBAcMag_mean
+tBodyAccMag-std()              tBAcMag_std
+tGravityAccMag-mean()          tGAcMag_mean
+tGravityAccMag-std()           tGAcMag_std
+tBodyAccJerkMag-mean()         tBAcJMag_mean
+tBodyAccJerkMag-std()          tBAcJMag_std
+tBodyGyroMag-mean()            tBGyMag_mean
+tBodyGyroMag-std()             tBGyMag_std
+tBodyGyroJerkMag-mean()        tBGyJerkMag_mean
+tBodyGyroJerkMag-std()         tBGyJerkMag_std
+fBodyAcc-mean()-X              fBAc_mean_X
+fBodyAcc-mean()-Y              fBAc_mean_Y
+fBodyAcc-mean()-Z              fBAc_mean_Z
+fBodyAcc-std()-X               fBAc_std_X
+fBodyAcc-std()-Y               fBAc_std_Y
+fBodyAcc-std()-Z               fBAc_std_Z
+fBodyAcc-meanFreq()-X          fBAc_meanF_X
+fBodyAcc-meanFreq()-Y          fBAc_meanF_Y
+fBodyAcc-meanFreq()-Z          fBAc_meanF_Z
+fBodyAccJerk-mean()-X          fBAcJ_mean_X
+fBodyAccJerk-mean()-Y          fBAcJ_mean_Y
+fBodyAccJerk-mean()-Z          fBAcJ_mean_Z
+fBodyAccJerk-std()-X           fBAcJ_std_X
+fBodyAccJerk-std()-Y           fBAcJ_std_Y
+fBodyAccJerk-std()-Z           fBAcJ_std_Z
+fBodyAccJerk-meanFreq()-X      fBAcJ_meanF_X
+fBodyAccJerk-meanFreq()-Y      fBAcJ_meanF_Y
+fBodyAccJerk-meanFreq()-Z      fBAcJ_meanF_Z
+fBodyGyro-mean()-X             fBGy_mean_X 
+fBodyGyro-mean()-Y             fBGy_mean_Y
+fBodyGyro-mean()-Z             fBGy_mean_Z
+fBodyGyro-std()-X              fBGy_std_X
+fBodyGyro-std()-Y              fBGy_std_Y
+fBodyGyro-std()-Z              fBGy_std_Z
+fBodyGyro-meanFreq()-X         fBGy_meanF_X
+fBodyGyro-meanFreq()-Y         fBGy_meanF_Y
+fBodyGyro-meanFreq()-Z         fBGy_meanF_Z
+fBodyAccMag-mean()             fBAcMag_mean
+fBodyAccMag-std()              fBAcMag_std
+fBodyAccMag-meanFreq()         fBAcMag_meanF
+fBodyBodyAccJerkMag-mean()     fBBAcJMag_mean
+fBodyBodyAccJerkMag-std()      fBBAcJMag_std 
+fBodyBodyAccJerkMag-meanFreq() fBBAcJMag_meanF
+fBodyBodyGyroMag-mean()        fBBGyMag_mean
+fBodyBodyGyroMag-std()         fBBGyMag_std
+fBodyBodyGyroMag-meanFreq()    fBBGyMag_meanF
+fBodyBodyGyroJerkMag-mean()    fBBGyJerkMag_mean
+fBodyBodyGyroJerkMag-std()     fBBGyJerkMag_std
+fBodyBodyGyroJerkMag-meanFreq()	fBBGyJerkMag_meanF 
+
+The original Data did not explicitly cite Units of Measure
+
+Appear to be in gravity units and radians.
+
+
+ 
+APPENDIX TWO
+ORIGINAL DATA DESCRIPTION
+==================================================================
+Human Activity Recognition Using Smartphones Dataset 
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 
+we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly 
+partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled 
+in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, 
+which has gravitational and body motion components, was separated using a Butterworth low-pass filter 
+into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, 
+therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained 
+by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+The dataset includes the following files:
+=========================================
+
+- 'README.txt'
+
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+
+- 'features.txt': List of all features.
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'train/X_train.txt': Training set.
+
+- 'train/y_train.txt': Training labels.
+
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+The following files are available for the train and test data. Their descriptions are equivalent. 
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
+- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+
+Notes: 
+======
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+License:
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
